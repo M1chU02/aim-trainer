@@ -1,0 +1,150 @@
+.screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 50% 0%, #0f172a 0%, transparent 70%),
+    var(--bg);
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.top {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.gradeBadge {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.roundOver {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.modeLabel {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin: 8px 0 4px;
+}
+
+.scoreNum {
+  font-family: var(--mono);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.scoreLabel {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.gradeLabel {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.statCell {
+  background: var(--bg-surface);
+  border-radius: 10px;
+  padding: 12px 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.statVal {
+  font-family: var(--mono);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.statLbl {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btnRow {
+  display: flex;
+  gap: 10px;
+}
+
+.btnPrimary, .btnSecondary {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: filter 0.12s, transform 0.1s;
+  border: 1px solid;
+}
+
+.btnPrimary:hover { filter: brightness(1.2); }
+.btnPrimary:active { transform: scale(0.97); }
+
+.btnSecondary {
+  background: var(--bg-surface);
+  border-color: var(--border);
+  color: var(--text-secondary);
+}
+.btnSecondary:hover { border-color: var(--border-bright); color: var(--text-primary); }
+.btnSecondary:active { transform: scale(0.97); }

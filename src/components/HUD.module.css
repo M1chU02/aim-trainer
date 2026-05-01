@@ -1,0 +1,38 @@
+.wrapper {
+  flex-shrink: 0;
+}
+
+.hud {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 20px;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border);
+  min-height: 58px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.modeTag {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 3px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 3px 10px;
+}
+
+.timerBar {
+  height: 3px;
+  background: var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.timerFill {
+  height: 100%;
+  transform-origin: left;
+}

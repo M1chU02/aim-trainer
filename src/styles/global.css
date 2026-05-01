@@ -1,0 +1,57 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #08090d;
+  --bg-surface: #0f1117;
+  --bg-card: #141820;
+  --bg-elevated: #1a2030;
+  --border: #1e2a3a;
+  --border-bright: #2a3a50;
+  --text-primary: #e0e8f4;
+  --text-secondary: #8a9bb0;
+  --text-muted: #4a5568;
+  --cyan: #00d4ff;
+  --cyan-dim: #00d4ff22;
+  --orange: #ff6b35;
+  --orange-dim: #ff6b3522;
+  --purple: #8b5cf6;
+  --purple-dim: #8b5cf622;
+  --green: #22c55e;
+  --green-dim: #22c55e22;
+  --amber: #f59e0b;
+  --amber-dim: #f59e0b22;
+  --pink: #ec4899;
+  --pink-dim: #ec489922;
+  --red: #ef4444;
+  --font: 'Rajdhani', sans-serif;
+  --mono: 'Share Tech Mono', monospace;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: var(--font);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
